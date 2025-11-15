@@ -1,31 +1,39 @@
-# 🧠 KNN Ad Purchase Predictor
+# KNN Purchase Predictor
 
-This project uses the **K-Nearest Neighbors (KNN)** algorithm to predict whether a user will purchase a product based on their **age** and **estimated salary**.
+A machine learning application that predicts whether a user will purchase an advertised product based on their age and estimated salary using the K-Nearest Neighbors algorithm.
 
----
+## Features
 
-## 📊 Dataset
+- Web-based interface for easy prediction
+- Trained on social network advertisement data
+- Real-time prediction results
 
-- **Source**: Social_Network_Ads.csv
-- **Features used**:
-  - `Age`
-  - `EstimatedSalary`
-- **Target**: `Purchased` (1 = Purchased, 0 = Not Purchased)
+## Dataset
 
----
+- Source: Social_Network_Ads.csv
+- Features: Age, Estimated Salary
+- Target: Purchase decision (Purchased or Not Purchased)
 
-## 🧰 Technologies Used
+## Technologies
 
 - Python
 - Pandas
 - Scikit-learn
-- Jupyter or basic Python script
+- Flask
 
----
+## Installation
 
-## 🚀 How to Run
-
-1. Clone this repo or download the files.
-2. Make sure you have the required libraries:
+1. Ensure Python is installed on your system.
+2. Install required dependencies:
    ```bash
-   pip install pandas scikit-learn
+   pip install pandas scikit-learn flask
+   ```
+
+## Usage
+
+1. Run the application:
+   ```bash
+   python app.py
+   ```
+2. Open your web browser and navigate to http://127.0.0.1:5000/
+3. Enter your age and estimated salary to get a purchase prediction.
